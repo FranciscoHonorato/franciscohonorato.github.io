@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/styleWeb.css">
+    <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/styleMobile.css">
     <script src="https://kit.fontawesome.com/9d2df36c95.js" crossorigin="anonymous"></script>
 </head>
@@ -14,9 +14,11 @@
     <header>
         <nav class="menu bg-light">
             <div class="burguer">
-                <i class="fa-solid fa-bars icon-burg" onclick="clickMenu()"> </i>
+                <i class="fa-solid fa-bars icon-burg" onclick="showMenu()"> </i>
                 <div class="btn-tema">
-                    <i class="fa-solid fa-circle-half-stroke" onclick="mudarTema()"></i>
+                    <abbr title="Mudar tema">
+                        <i class="fa-solid fa-circle-half-stroke" onclick="mudarTema()"></i>
+                    </abbr>
                 </div>
 
             </div>
@@ -30,7 +32,7 @@
         </nav>
 
         <div id="bunner" class="bunner">
-            <div class="texto">
+            <div class="bunner-texto">
                 <h3> Olá! eu sou </h3>
                 <h1> Francisco de Assis Honorato</h1>
                 <h3>Bem vindo ao meu portifolio </h3>
@@ -42,14 +44,14 @@
                 </section>
             </div>
             <div class="imagem">
-                <img src="img/imagem2.jpg" alt="perfil">
+                <img src="img/imagem.jpg" alt="perfil">
             </div>
         </div>
     </header>
 
     <main class="light">
 
-        <section id="sobre" class="sobre">
+        <section id="sobre" class="sobre ">
             <h1>Sobre</h1>
             <p>
                 Meu nome é Francisco de Assis Honorato e sou apaixonado por tecnologia.
