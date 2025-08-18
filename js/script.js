@@ -32,7 +32,7 @@ function showMenu() {
 
 
 for (let item of itemList) {
-    item.addEventListener('click', () => showMenu())
+    item.addEventListener('click',showMenu)
 }
 
 
