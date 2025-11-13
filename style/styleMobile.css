@@ -16,11 +16,11 @@
   }
 
   .btn-tema:hover {
-    color: var(--cor-verde);
+    color: var(--main-color);
   }
 
   .icon-burg:hover {
-    color: var(--cor-verde);
+    color: var(--main-color);
   }
 
   .menu {
@@ -46,6 +46,7 @@
       opacity: 0;
       transform: translateY(-20px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -66,23 +67,23 @@
   }
 
   .div-cards {
-
     flex-direction: column;
   }
 
   .card {
+    max-width: 80%;
+    flex-basis: auto;
     flex-direction: column;
   }
 
-  .card img{
-   max-width: 100%;
- 
+  .card img {
+    max-width: 100%;
+
+
   }
 
-  .texto{
-   
-    height: 12rem;
-   margin-top: 3rem
-   ;
+  .texto {
+    height: 50%;
+    margin-top: 2rem;
   }
 }

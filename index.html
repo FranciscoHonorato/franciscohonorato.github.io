@@ -10,132 +10,133 @@
     <script src="https://kit.fontawesome.com/9d2df36c95.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-light">
-    <header>
-        <nav class="menu bg-light">
-            <div class="burguer">
-                <i class="fa-solid fa-bars icon-burg" onclick="showMenu()"> </i>
-                <div class="btn-tema">
-                    <abbr title="Mudar tema">
-                        <i class="fa-solid fa-circle-half-stroke" onclick="mudarTema()"></i>
-                    </abbr>
-                </div>
-
-            </div>
-            <ul class="itens-menu" id="itens-menu">
-                <li class="item"> <a href="#bunner"> <label> Inicio </label> </a> </li>
-                <li class="item"> <a href="#sobre"> <label> Sobre </label> </a> </li>
-                <li class="item"> <a href="#projetos"> <label> Projetos </label> </a> </li>
-                <li class="item"> <a href="#contatos"> <label> Contatos </label> </a> </li>
-                <li class="icon-tema"> <i class="fa-solid fa-circle-half-stroke" onclick="mudarTema()"></i> </li>
-            </ul>
-        </nav>
-
-        <div id="bunner" class="bunner">
-            <div class="bunner-texto">
-                <h3> Olá! eu sou </h3>
-                <h1> Francisco de Assis Honorato</h1>
-                <h3>Bem vindo ao meu portifolio </h3>
-                <section id="contatos" class="contatos">
-                    <a class="fa-brands fa-linkedin" href="https://www.linkedin.com/in/francisco-de-assis-honorato-do-nascimento-a7a02532b/" target="_blank"> </a>
-                    <a class="fa-brands fa-github" href="https://github.com/FranciscoHonorato" target="_blank"> </a>
-                    <a class="fa-brands fa-instagram" href="https://www.instagram.com/diassishonorato?igsh=YTQwZjQ0NmI0OA==" target="_blank"> </a>
-                    <a class="fa-brands fa-whatsapp" href="https://wa.me/5521973604927" target="_blank"> </a>
-                </section>
-            </div>
-            <div class="imagem">
-                <img src="img/imagem.jpg" alt="perfil">
-            </div>
-        </div>
-    </header>
-
-    <main class="light">
-
-        <section id="sobre" class="sobre ">
-            <h1>Sobre</h1>
-            <p>
-                Meu nome é Francisco de Assis Honorato e sou apaixonado por tecnologia.
-                Possuo habilidades técnicas em desenvolvimento com Java, JavaScript, React e bancos de dados.
-                Sou formado em Ciência da Computação pela univercidade Univeritas Rio de Janeiro.
-            </p>
-        </section>
-
-        <section id="projetos" class="projetos">
-            <h1> Projetos </h1>
-            <div class="div-cards">
-
-                <div class="card bg-light">
-                    <img src="img/projeto1.png" alt="lista de tarefas">
-                    <div class="texto">
-                        <h2>Lista de tarefas</h2>
-                        <p>
-                            Aplicação web para gerenciar tarefas, permite  criar, editar e excluir tarefas.
-                            Desenvolvido com React e localStorage.
-                        </p>
-                       
-                        <br>
-                        <button type="button" class="btnGit">
-                            <a href="https://github.com/FranciscoHonorato/to-do-list" target="_blank">
-                                GitHub ❯
-                            </a>
-                        </button>
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="menu">
+                <div class="burguer">
+                    <i class="fa-solid fa-bars icon-burg" onclick="showMenu()"> </i>
+                    <div class="btn-tema">
+                        <abbr title="Mudar tema">
+                            <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i>
+                        </abbr>
                     </div>
-                </div>
 
-                <div class="card reverse bg-light">
-                    <img src="img/projeto2.png" alt="controle de gastos">
-                    <div class="texto">
-                        <h2>Controle de gastos</h2>
-                        <p>
-                            Aplicação web para controle de gastos. Permite o cadastro, editar e excluir despesas,
-                            construída com React e localStorage.
-                        </p>
-                      
-                        <br>
-                        <button type="button" class="btnGit">
-                            <a href="https://github.com/FranciscoHonorato/controle-financeiro" target="_blank">
-                                GitHub ❯
-                            </a>
-                        </button>
-                    </div>
                 </div>
-                <div class="card bg-light">
-                    <img src="img/jogo1.jpg" alt="jogo da velha">
-                    <div class="texto">
-                        <h2>jogo da velha</h2>
-                        <p>
-                            Projeto prático de Jogo da Velha, construído com HTML, CSS e JavaScript
+                <ul class="itens-menu" id="itens-menu">
+                    <li class="item"> <a href="#bunner"> <label> Inicio </label> </a> </li>
+                    <li class="item"> <a href="#sobre"> <label> Sobre </label> </a> </li>
+                    <li class="item"> <a href="#projetos"> <label> Projetos </label> </a> </li>
+                    <li class="item"> <a href="#contatos"> <label> Contatos </label> </a> </li>
+                    <li class="icon-tema"> <i class="fa-solid fa-circle-half-stroke" onclick="toggleTheme()"></i> </li>
+                </ul>
+            </nav>
 
-                        </p>
-                        
-                        <br>
-                        <button type="button" class="btnGit">
-                            <a href="https://github.com/FranciscoHonorato/jogo-da-velha" target="_blank">
-                                GitHub ❯
-                            </a>
-                        </button>
-                    </div>
+            <div id="bunner" class="bunner">
+                <div class="bunner-texto">
+                    <h3> Olá! eu sou </h3>
+                    <h1> Francisco de Assis Honorato</h1>
+                    <h3>Bem vindo ao meu portifolio </h3>
+                    <section id="contatos" class="contatos">
+                        <a class="fa-brands fa-linkedin"
+                            href="https://www.linkedin.com/in/francisco-de-assis-honorato-do-nascimento-a7a02532b/"
+                            target="_blank"> </a>
+                        <a class="fa-brands fa-github" href="https://github.com/FranciscoHonorato" target="_blank"> </a>
+                        <a class="fa-brands fa-instagram"
+                            href="https://www.instagram.com/diassishonorato?igsh=YTQwZjQ0NmI0OA==" target="_blank"> </a>
+                        <a class="fa-brands fa-whatsapp" href="https://wa.me/5521973604927" target="_blank"> </a>
+                    </section>
                 </div>
-                <div class="card reverse bg-light">
-                    <img src="img/clima.png" alt="controle de gastos">
-                    <div class="texto">
-                        <h2>Clima</h2>
-                        <p>Aplicação web de clima, desenvolvido em React e integrado à API OpenWeather</p>
-                      
-                        <br>
-                        <button type="button" class="btnGit">
-                            <a href="https://github.com/FranciscoHonorato/Clima" target="_blank">
-                                GitHub ❯
-                            </a>
-                        </button>
-                    </div>
+                <div class="imagem">
+                    <img src="img/img.png" alt="perfil">
                 </div>
-
             </div>
-        </section>
-    </main>
-    <footer class="rodape">Desenvolvido por <a href="#">Francisco de Assis</a> </footer>
+        </header>
 
+        <main>
+
+            <section id="sobre" class="sobre ">
+                <h1>Sobre</h1>
+                <p>
+                    Meu nome é Francisco de Assis Honorato e sou apaixonado por tecnologia.
+                    Possuo habilidades técnicas em desenvolvimento com Java, JavaScript, React e bancos de dados.
+                    Sou formado em Ciência da Computação pela univercidade Univeritas Rio de Janeiro.
+                </p>
+            </section>
+
+            <section id="projetos" class="projetos">
+                <h1> Projetos </h1>
+                <div class="div-cards">
+
+                    <div class="card" style="--i:0.9">
+                        <img src="img/projeto1.png" alt="lista de tarefas">
+                        <div class="texto">
+                            <h3>Lista de tarefas</h3>
+                            <p>
+                                Aplicação web para gerenciar tarefas, permite criar, editar e excluir tarefas.
+                                Desenvolvido com React e localStorage.
+                            </p>
+                            <br>
+                            <button type="button" class="btnGit">
+                                <a href="https://github.com/FranciscoHonorato/to-do-list" target="_blank">
+                                    GitHub ❯
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card" style="--i:0.8">
+                        <img src="img/projeto2.png" alt="controle de gastos">
+                        <div class="texto">
+                            <h3>Controle de gastos</h3>
+                            <p>
+                                Aplicação web para controle de gastos. Permite o cadastro, editar e excluir despesas,
+                                construída com React e localStorage.
+                            </p>
+                            <br>
+                            <button type="button" class="btnGit">
+                                <a href="https://github.com/FranciscoHonorato/controle-financeiro" target="_blank">
+                                    GitHub ❯
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card" style="--i:0.7">
+                        <img src="img/jogo1.jpg" alt="jogo da velha">
+                        <div class="texto">
+                            <h3>jogo da velha</h3>
+                            <p>
+                                Projeto prático de Jogo da Velha, construído com HTML, CSS e JavaScript
+
+                            </p>
+                            <br>
+                            <button type="button" class="btnGit">
+                                <a href="https://github.com/FranciscoHonorato/jogo-da-velha" target="_blank">
+                                    GitHub ❯
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card" style="--i:0.9">
+                        <img src="img/clima.png" alt="clima">
+                        <div class="texto">
+                            <h3>Clima</h3>
+                            <p>Aplicação web de clima, desenvolvido em React e integrado à API OpenWeather</p>
+                            <br>
+                            <button type="button" class="btnGit">
+                                <a href="https://github.com/FranciscoHonorato/Clima" target="_blank">
+                                    GitHub ❯
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+        <footer class="rodape">Desenvolvido por <a href="#">Francisco de Assis</a> </footer>
+
+    </div>
     <script src="js/script.js"></script>
 </body>
 
